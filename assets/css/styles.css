@@ -6,10 +6,7 @@ body {
     background-color: white;
     font-family: 'Mongolian Baiti';
     color: #707070;
-}
-
-nav.navbar {
-    background-color: #4684F1;
+    position: relative;
 }
 
 /* SECTION HOME */
@@ -39,24 +36,22 @@ section#home .side h5 {
     margin-bottom: 1.5em;
 }
 
-ion-icon {
+div.medsos .fab {
     color: white;
-    font-size: 64px;
-    margin-bottom: 0.2em;
-    margin-left: 0.3em;
-    margin-right: 0.3em;
+    font-size: 35px;
+    margin: 0 .5rem 1rem .5rem;
 }
 
-ion-icon#ig:hover {
+div.medsos #ig:hover {
     color: #ee2eb4;
 }
 
-ion-icon#tw:hover {
+div.medsos #tw:hover {
     color: #4684F1;
 }
 
-ion-icon#yt:hover {
-    color: #ee2e2e;
+div.medsos #st:hover {
+    color: #000B6A;
 }
 
 section#home .btn {
@@ -111,7 +106,7 @@ section#about .lead.text-about {
 /* SECTION EXPERIENCE */
 
 section#experience .experience {
-    padding: 2.7em 0 3em 5em;
+    padding: 5em 0 3em 5em;
 }
 
 section#experience h1,
@@ -120,13 +115,13 @@ section#experience .lead {
 }
 
 section#experience .lead {
-    padding-bottom: 2em;
+    padding-bottom: .5em;
 }
 
 /* SECTION SKILL */
 
 section#skill .skill {
-    padding: 2.7em 0 5em 5em;
+    padding: 5em 0 5em 5em;
 }
 
 section#skill h1,
@@ -160,7 +155,7 @@ section#skill .skill .row .col .progress-skill {
 /* SECTION AWARD */
 
 section#award .award {
-    padding: 2.7em 0 7em 5em;
+    padding: 5em 0 5em 5em;
 }
 
 section#award h1,
@@ -188,16 +183,51 @@ footer.page-footer {
 /* Extra small devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
 Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    section#about div.about .container {
+        padding: 5em 19em 7em 5em;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+}
+
+/* Make default navbar links display block at choosen breakpoint and adjust styles to fit... */
+@media (max-width: 62em) {
+	.navbar-nav {
+		padding-top: .425rem;
+		padding-left: 0.75rem;
+	}
+	.navbar-nav .nav-item {
+		float: none;
+	}
+	.navbar-brand {
+		float: right;
+	}
+	.navbar-brand,
+	.navbar-nav .nav-item {
+		display: block;
+	}
+	.navbar-nav .nav-item + .nav-item {
+		margin-left: 0;
+	}
+	.dropdown-menu {
+		position: relative;
+		float: none;
+	}
+}
 
 html {
     font-size: 1rem;
