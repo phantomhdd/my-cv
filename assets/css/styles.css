@@ -44,14 +44,17 @@ div.medsos .fab {
 
 div.medsos #ig:hover {
     color: #ee2eb4;
+    text-shadow: 0 0 5px grey;
 }
 
 div.medsos #tw:hover {
     color: #4684F1;
+    text-shadow: 0 0 5px grey;
 }
 
 div.medsos #st:hover {
     color: #000B6A;
+    text-shadow: 0 0 9px grey;
 }
 
 section#home .btn {
